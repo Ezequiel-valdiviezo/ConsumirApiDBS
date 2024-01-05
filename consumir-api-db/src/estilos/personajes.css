@@ -6,21 +6,28 @@ body {
   text-align: center;
   min-height: 100vh;
   background-color: #ececec; 
+  background-image: url(../assets/paisaje2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
-  
 .personajes {
- text-align: center; 
- /* padding-left: 50px; */
+ text-align: center;
 }
-
+h2{
+  width: 350px;
+  border-radius: 20px;
+  margin: auto;
+  background-color: #eea1e4a0;
+}
 .contenedorPersonajes {
   gap: 20px;
   display: flex;
   flex-wrap: wrap;
 }
-
 .cardPersonaje {
-  background-color: #f5f5f5;
+  background-color: #f5f5f55e;
   padding: 15px;
   border: 3px solid black;
   border-radius: 8px;
@@ -30,24 +37,34 @@ body {
   margin: 2rem;
   flex: 1;
 }
-
 .cardPersonaje:hover {
   transform: scale(1.05);
+  background-color: aliceblue;
 }
-
 .cardPersonaje img {
-  /* width: 100%; */
   max-height: 450px;
   border-radius: 8px;
 }
-
 .datos {
   text-align: center;
 }
-
 #name {
   font-size: 1.5em;
   color: #d0b207; 
   margin-bottom: 5px;
   font-weight: bold;
+}
+button {
+    padding: 7px 14px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: white;
+    border: 3px solid #d0b207;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #816d00;
+    color: white;
+    box-shadow: 0 0px 20px rgb(146, 146, 0);
 }
