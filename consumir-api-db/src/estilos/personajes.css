@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  background-color: #ececec; 
+}
+  
+.personajes {
+ text-align: center; 
+ /* padding-left: 50px; */
+}
+
+.contenedorPersonajes {
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cardPersonaje {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border: 3px solid black;
+  border-radius: 8px;
+  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  margin: 2rem;
+  flex: 1;
+}
+
+.cardPersonaje:hover {
+  transform: scale(1.05);
+}
+
+.cardPersonaje img {
+  /* width: 100%; */
+  max-height: 450px;
+  border-radius: 8px;
+}
+
+.datos {
+  text-align: center;
+}
+
+#name {
+  font-size: 1.5em;
+  color: #d0b207; 
+  margin-bottom: 5px;
+  font-weight: bold;
+}
